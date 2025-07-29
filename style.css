@@ -137,45 +137,27 @@ header {
   height: 75%;
 }
 
-.planner-form {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 600px;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.planner-form input {
-  width: 90%;
+.roster-form input,
+.roster-header input {
   padding: 8px;
-  margin-bottom: 10px;
+  margin: 5px;
+  width: 200px;
 }
 
-.planner-form button {
-  padding: 6px 12px;
+.roster-form button,
+.roster-header button {
+  padding: 8px 12px;
   margin-top: 5px;
 }
 
-#drillList {
-  list-style-type: disc;
-  margin-left: 20px;
+#rosterTable {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
 }
 
-#drillList li {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 0;
-}
-
-.weekly-plans {
-  margin-top: 30px;
-}
-
-.plan-card {
-  background: #eef;
-  padding: 15px;
-  margin: 10px auto;
-  border-radius: 6px;
-  max-width: 600px;
+#rosterTable th,
+#rosterTable td {
+  padding: 10px;
+  text-align: left;
 }

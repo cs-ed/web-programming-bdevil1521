@@ -34,6 +34,6 @@ const quotes = [
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  const randomQuote = Math.floor(Math.random() * quotes.length);
+  let randomQuote = Math.floor(Math.random() * quotes.length);
   document.getElementById('quote-box').innerHTML = quotes[randomQuote];
 });

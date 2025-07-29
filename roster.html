@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>MCHS Flag Football Roster</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="roster.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="sidebar">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="videos.html">Videos</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <header>
+        MCHS Flag Football Roster
+      </header>
+
+      <section class="roster-form">
+        <h3>Add Player</h3>
+        <form id="playerForm">
+          <input type="text" id="playerName" placeholder="Player Name" required />
+          <input type="number" id="playerNumber" placeholder="Number" required />
+          <input type="text" id="playerClass" placeholder="Class (e.g., Junior)" required />
+          <button type="submit">Add Player</button>
+        </form>
+      </section>
+
+      <section class="roster-list">
+        <h3>Current Players</h3>
+        <table id="rosterTable" border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Number</th>
+              <th>Class</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
