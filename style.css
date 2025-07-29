@@ -1,3 +1,181 @@
 body {
-  background-color: lightgray;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: 220px;
+  background-color: #0B6623;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #0B6623;
+  color: white;
+  padding: 20px 0;
+  font-size: 2em;
+}
+
+/* Team Photo */
+.team-photo {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* Video Embed */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Fundraiser Section */
+.fundraiser {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffd86c;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fundraiser a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #0B6623;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.fundraiser a:hover {
+  background-color: #218838;
+}
+
+.quote-box {
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
+  color: #333;
+  background-color: #ffd86c;
+  border-left: 4px solid #0B6623;
+  border-radius: 6px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 75%;
+}
+
+.planner-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.planner-form input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.planner-form button {
+  padding: 6px 12px;
+  margin-top: 5px;
+}
+
+#drillList {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#drillList li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.weekly-plans {
+  margin-top: 30px;
+}
+
+.plan-card {
+  background: #eef;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 6px;
+  max-width: 600px;
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>Flag Football Practice Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="videos.html">Videos Page</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        Practice Planner
+      </header>
+
+      <section class="planner-form">
+        <h3>Create a New Practice Plan</h3>
+        <form id="practiceForm">
+          <label>Practice Name:</label><br>
+          <input type="text" id="practiceName" required /><br>
+
+          <label>Date:</label><br>
+          <input type="date" id="practiceDate" required /><br>
+
+          <label>Drill:</label><br>
+          <input type="text" id="drillInput" />
+          <button type="button" id="addDrillBtn">Add Drill</button>
+
+          <ul id="drillList"></ul>
+
+          <button type="submit">Save Practice Plan</button>
+        </form>
+      </section>
+
+      <section class="weekly-plans">
+        <h3>Weekly Practice Plans</h3>
+        <div id="practicePlans"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="plan.js"></script>
+</body>
+</html>
